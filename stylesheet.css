@@ -1,0 +1,89 @@
+body {
+   font-family: "Lexend", "Tilt Neon";
+   background-color: #C3B0A8;
+}
+html {
+	font-size: 1rem;
+	scroll-behavior: smooth;
+}
+
+h1 {
+	color: #041926;
+	font-family: Lexend;
+	font-size: 7vw;
+	font-weight: 500;
+	line-height: 1.3;
+	letter-spacing: 0.5rem;
+	padding-top: 6rem;
+	padding-bottom: 3rem;
+	margin: 0;
+}
+h2 {
+	color: #041926;
+	font-size: 3vw;
+	font-family: Lexend;
+	font-weight: 300;
+	line-height: 1.4;
+	letter-spacing: 0rem;
+	padding-bottom: 0rem;
+	margin: 0;
+}
+body {
+	color: #041926;
+	font-size: 1.1rem;
+	font-family: Lexend;
+	font-weight: 300;
+	line-height: 1.8;
+}
+
+label {
+	color: #041926;
+	font-size: 1.1rem;
+	font-family: Lexend;
+	font-weight: 500;
+	line-height: 1.8;
+}
+
+container {
+	width: 100%;
+    margin: auto;
+}
+
+input[type=text], select {
+	width:100%;
+	font-family: Lexend;
+	font-size: 1rem;
+	font-weight: 300;
+	padding: .5rem 1rem;
+	margin-bottom: 1rem;
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 1px;
+}
+
+input[type=checkbox], select{
+	margin-bottom: 2rem;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  background-color: #F4F5F6;
+  resize: none;
+  font-size: 1rem;
+  font-family: Lexend;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+ h2 {
+ 	font-size: 4vw;
+ }
+}
