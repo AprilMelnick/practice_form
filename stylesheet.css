@@ -76,6 +76,18 @@ textarea {
   font-family: Lexend;
 }
 
+button {
+	width: 100%;
+	font-family: Lexend;
+	font-size: 1rem;
+	background-color: #F2B049;
+	padding: 1rem;
+	border-style: solid;
+	border-color: #041926;
+	border-width: 1px;
+	margin-top: 1rem;
+	margin-bottom: 4rem;
+}
 @media only screen and (max-width: 800px) {
   body {
   }
