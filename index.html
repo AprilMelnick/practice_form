@@ -13,25 +13,54 @@
 		<div class="container">
 			<div style="max-width: 40rem; margin-left: 4rem;" > 
 				<h1>Let's chat!</h1>
-				<form id="form" autocomplete="on">
+				<form id="form" method="POST">
+          <div>
   					<label for="firstname">First Name</label>
   					<input type="text" id="firstname" placeholder="your name" name="first_name">
+          </div>
+          <div>
   					<label for="lastname">Last Name</label>
   					<input type="text" id="lastname" placeholder="your last name" name="last_name">
+          </div>
+          <div>
   					<label for="email">Email</label>
   					<input type="text" id="email" placeholder="your business email" name="email">
+          </div>
+          <div>
   					<label for="website">Your Website</label>
   					<input type="text" id="website" placeholder="your business site" name="website">
+          </div>
+          <div>
   					<label for="signup">&#x1F58B Signup for Newsletter</label>
   					<input type="checkbox" id="signup" name="signup">
+          </div>
   					<br>
-					<label for="appointment">&#x1F4C6 Schedule an appointment</label>
+          <div>
+					 <label for="appointment">&#x1F4C6 Schedule an appointment</label>
   					<input type="checkbox" id="schedule" name="schedule">
+          </div>
   					<br>
+          <div>
   					<label for="textinput">Add any thoughts or questions here...</label>
   					<textarea id="textinput" name="textinput"></textarea>
-            <button type="submit" id="submit-button">Submit</button>
+          </div>
+          <div>
+            <button class="button" type="submit" id="submit-button">Submit</button>
+          </div>
 				</form>
+        <div
+      id="message"
+      style="
+        display: none;
+        margin: 20px;
+        font-weight: bold;
+        color: green;
+        padding: 8px;
+        background-color: beige;
+        border-radius: 4px;
+        border-color: aquamarine;
+      "
+    ></div>
 				<h2>I'm looking forward to speaking with you!</h2>
 				</div>
 			</div>
@@ -64,36 +93,7 @@
             },
           }
         )
-          .then(function (response) {
-            // Check if the request was successful
-            if (response) {
-              return response; // Assuming your script returns JSON response
-            } else {
-              throw new Error("Failed to submit the form.");
-            }
-          })
-          .then(function (data) {
-            // Display a success message
-            document.getElementById("message").textContent =
-              "Data submitted successfully!";
-            document.getElementById("message").style.display = "block";
-            document.getElementById("message").style.backgroundColor = "green";
-            document.getElementById("message").style.color = "beige";
-            document.getElementById("submit-button").disabled = false;
-            document.getElementById("form").reset();
-
-            setTimeout(function () {
-              document.getElementById("message").textContent = "";
-              document.getElementById("message").style.display = "none";
-            }, 2600);
-          })
-          .catch(function (error) {
-            // Handle errors, you can display an error message here
-            console.error(error);
-            document.getElementById("message").textContent =
-              "An error occurred while submitting the form.";
-            document.getElementById("message").style.display = "block";
-          });
+    
       	});
     	</script>
 	</body>
